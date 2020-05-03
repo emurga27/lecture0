@@ -2,7 +2,7 @@
 <html></<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage!</title>
     <style>
       h1 {
@@ -49,6 +49,17 @@
           content: "Welcome!"
         }
       }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: lightyellow;
+        font-size: 20px;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+      }
     </style>
   </head>
   <body>
@@ -79,5 +90,15 @@
       <p>This is a paragraph</p>
       <p>This is a second paragraph</p>
       <p class="screen-only">This paragraph won't appear when you print this page</p>
+      <div>
+        <div>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>B. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>C. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>D. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>E. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>F. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>G. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        <div>H. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+      </div>
   </body>
 </html>
