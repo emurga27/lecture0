@@ -23,7 +23,7 @@
         font-size: 24px;
         background-color: green;
       }
-      button: hoover {
+      button:hoover {
         background-color: orange;
       }
       a::before {
@@ -33,6 +33,21 @@
       p::selection {
         color: red;
         background-color: yellow;
+      }
+      @media print {
+        .screen-only {
+          display: none;
+        }
+      }
+      @media (min-width: 500px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media (max-width: 499px) {
+        body {
+          background-color: blue;
+        }
       }
     </style>
   </head>
@@ -59,7 +74,10 @@
         <li><a href="#">third link</a></li>
       </ul>
       <p>
-        p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+      <p>This is a paragraph</p>
+      <p>This is a second paragraph</p>
+      <p class="screen-only">This paragraph won't appear when you print this page</p>
   </body>
 </html>
