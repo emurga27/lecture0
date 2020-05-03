@@ -8,7 +8,7 @@
       h1 {
         color: red;
       }
-      ol > li { <!-- this means that this condition only applies for the immediate "child"-->
+      ol > li {
         color: red;
       }
       input[type=text] {
@@ -29,6 +29,10 @@
       a::before {
         content: "\21d2 Click here: ";
         font-weight: bold;
+      }
+      p::selection {
+        color: red;
+        background-color: yellow;
       }
     </style>
   </head>
@@ -54,5 +58,8 @@
         <li><a href="#">second link</a></li>
         <li><a href="#">third link</a></li>
       </ul>
+      <p>
+        p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
   </body>
 </html>
